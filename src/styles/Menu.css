@@ -1,0 +1,89 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #333;
+  width: 100%;
+  padding: 25px 100px;
+  z-index: 9999;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+header.sticky {
+  background: #333;
+  backdrop-filter: blur(4px);
+  padding: 15px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header .Mlogo {
+  color: #ffd49f;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: "Cinzel", serif;
+}
+header.sticky .Mlogo {
+  color: #ffd49f;
+}
+header .Mul {
+  position: relative;
+  display: flex;
+}
+
+header .Mul .Mli {
+  position: relative;
+  list-style: none;
+}
+
+header .Mul .Mli a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  padding: 5px 10px;
+  color: #ffd49f;
+  overflow: hidden;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Lobster", cursive;
+  transition: 0.5s;
+}
+header .Mul .Mli a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transition: 0.5s;
+}
+
+header .Mul .Mli a:hover:before,
+header .Mul .Mli a:hover:after {
+  width: 50%;
+  height: 50%;
+}
+header .Mul .Mli a:hover{
+
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+}
+header .Mul .Mli a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transition: 0.5s;
+}
+
+

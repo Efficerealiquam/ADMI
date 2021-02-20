@@ -1,0 +1,81 @@
+.S1about {
+  margin: 0 50px;
+  min-height: 100vh;
+  margin-top: 10vh;
+}
+.S1heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #162c3b;
+}
+.S1heading h2 {
+  /*     -webkit-text-stroke: 1px #00bcd4; */
+  position: relative;
+  text-shadow: 0 0 4px #162c3b;
+  font-size: 5em;
+  font-family: "Cinzel", serif;
+}
+.S1heading h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -10px;
+  width: 20%;
+  height: 4px;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+.S1content {
+  position: relative;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.S1contentBx {
+  padding-right: 30px;
+  position: relative;
+}
+.S1contentBx h3 {
+  font-weight: 900;
+  color: #162c3b;
+  font-size: 24px;
+  margin-bottom: 10px;
+  position: relative;
+  width: fit-content;
+}
+.S1contentBx h3::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  
+  width: 25%;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.w50 {
+  min-width: 50%;
+}
+.S1content img {
+  max-width: 100%;
+}
+
+.cus_h3_about {
+  font-weight: 900;
+  font-size: 24px;
+  color: #162c3b;
+  margin-bottom: 10px;
+  position: relative;
+  width: fit-content;
+}
+.cus_h3_about::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 25%;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.7);
+}

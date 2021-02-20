@@ -1,0 +1,112 @@
+.pastores{
+    min-height:120vh;
+}
+.S3heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 70px;
+}
+.S3heading p{
+
+  padding:0 4vh;
+  text-align: initial;
+}
+.S3heading h2 {
+  font-weight: 900;
+  font-size: 5em;
+  display: block;
+
+  -webkit-text-stroke: 1px #111;
+  line-height: 1.2em;
+}
+.S3heading h2.colorH2 {
+  color: #111;
+}
+
+/* .S3heading h2::before {
+  content: attr(data-text);
+  position: absolute;
+  color: #222;
+  -webkit-text-stroke: 1px #222;
+  z-index: 2;
+  transform: translate(10px, -10px);
+} */
+.s3w60 {
+  width: 60%;
+}
+.s3w50 {
+    width: 50%;
+  }
+  .s3center{
+    justify-items: center;
+    align-items: center;
+    display: grid;
+  }
+.s3cont {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: .5s;
+}
+.s3cont.s3active {
+  opacity: 1;
+}
+
+.S3imgBx img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  object-position: center center;
+}
+.b000 {
+
+  border: 1px solid #222;
+}
+.s3controls{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:-81px;
+    width: 80px;
+    z-index: 10;
+}
+.s3controls li{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #222;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.s3controls li::before{
+    content:"";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(45deg);
+}
+.s3controls li:hover::before{
+    border-left: 3px solid #222;
+    border-bottom: 3px solid #222;
+}
+.s3controls li:hover{
+    background: #fff;
+    border: 1px solid #222;
+}
+.s3controls li:nth-child(2):before{
+    transform: rotate(225deg);
+    
+}
+.S3Text{
+    text-align: center;
+    color: #555;
+}

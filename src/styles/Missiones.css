@@ -1,0 +1,343 @@
+div.container {
+  margin-top: 15px;
+  position: relative;
+  width: 97%;
+  height: 120vh;
+  display: grid;
+  margin-left: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 33% 31% 31%;
+  grid-gap: 5px;
+  grid-template-areas:
+    "box1 box2 box2 box3"
+    "box1 box4 box5 box3"
+    "box6 box6 box7 box7";
+}
+div.container div.box {
+  position: relative;
+  overflow: hidden;
+  background: #000000;
+  border: 5px solid #fff;
+  cursor: pointer;
+}
+div.container div.box img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+div.container div.box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 100;
+}
+
+div.container div.box.box1 {
+  grid-area: box1;
+}
+div.container div.box.box2 {
+  grid-area: box2;
+}
+div.container div.box.box3 {
+  grid-area: box3;
+}
+div.container div.box.box4 {
+  grid-area: box4;
+}
+div.container div.box.box5 {
+  grid-area: box5;
+}
+div.container div.box.box6 {
+  grid-area: box6;
+}
+div.container div.box.box7 {
+  grid-area: box7;
+}
+
+div.container:hover .box .overlay {
+  opacity: 1;
+}
+div.container:hover .box img {
+  filter: hue-rotate(50deg) grayscale(0.8);
+}
+div.container .box .overlay:hover {
+  opacity: 0;
+}
+div.container .box .overlay:hover ~ img {
+  filter: none;
+}
+
+@media screen and (max-width: 1017px) {
+  div.container {
+    margin: 0 calc(2.5% - 0px);
+    margin-top: 40px;
+    margin-bottom: 50px;
+    position: relative;
+    width: 95%;
+    min-height: 1500px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-areas:
+      "box1 box2"
+      "box1 box3"
+      "box4 box4"
+      "box5 box5"
+      "box6 box7";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  div.container {
+    margin: 0 calc(5% - 0px);
+    margin-top: 30px;
+    margin-bottom: 30px !important;
+    position: relative;
+    width: 90%;
+    min-height: 1800px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5"
+      "box6"
+      "box7";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding-bottom: 30px;
+  }
+  div.container .box {
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+  }
+}
+@media screen and (max-width: 430px) {
+  div.container .box {
+    min-height: 200px;
+  }
+  div.container .box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.sinZing2::before {
+  content: "";
+  position: relative;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  display: block;
+  background: linear-gradient(
+      -45deg,
+      transparent 33.33%,
+      #111 33.33%,
+      #111 66.66%,
+      transparent 66.66%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 33.33%,
+      #111 33.33%,
+      #111 66.66%,
+      transparent 66.66%
+    );
+  background-size: 30px 60px;
+}
+.sinZing2::after {
+  content: "";
+  position: relative;
+  bottom: -2vh;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  display: block;
+  background: linear-gradient(
+      -45deg,
+      transparent 33.33%,
+      #111 33.33%,
+      #111 66.66%,
+      transparent 66.66%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 33.33%,
+      #111 33.33%,
+      #111 66.66%,
+      transparent 66.66%
+    );
+  background-size: 30px 60px;
+  transform: rotate(180deg);
+}
+
+.mdl_cont {
+  position: relative;
+  border: 10px solid #fff;
+  width: 100%;
+  border-radius: unset !important;
+  display: inline-table;
+}
+.mdl_cont img {
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.cust_icon {
+  position: absolute;
+  top: 2vh;
+  cursor: pointer;
+  text-shadow: 0 0 10px #111;
+  right: 1.5vh;
+}
+.S4Cont_desc {
+  position: relative;
+  width: 100%;
+  padding: 0 4vh;
+  color: #fff;
+}
+.S4Cont_desc h2 {
+  position: relative;
+  font-size: 2.2em;
+
+  color: transparent;
+  -webkit-text-stroke: 1px #ffd49f;
+  text-shadow: 0 0 3px #ffd49f;
+}
+.S4Cont_desc .s4H2Before {
+  width: fit-content;
+}
+.S4Cont_desc .s4H2Before::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background: #ffd49f;
+}
+.S4cont {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  max-height: 800px;
+  opacity: 1;
+}
+.s3w40 {
+  width: 40%;
+}
+.S3Text.cs3 h2 {
+  text-align: center;
+}
+.S3Text.cs3 h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -10px;
+  width: 15%;
+  height: 3px;
+  background-color: #ffd49f;
+}
+.s3center.cs3_1 {
+  align-items: normal;
+}
+.S3Text.cs3 p {
+  text-align: initial;
+  margin-top: 20px;
+}
+.tac.fs4em {
+  font-size: 4em;
+}
+.fs3em {
+  font-size: 3em;
+}
+.tac {
+  text-align: center;
+}
+.s3w90 {
+  width: 90%;
+}
+
+.mt_20 {
+  margin-top: 20px;
+}
+.mt_40 {
+  margin-top: 40px;
+}
+.s3Dbtm {
+  margin-top: 40px;
+  height: 2px;
+}
+
+.bbtm_1sw {
+  border-bottom: 1px solid #fff;
+}
+.ch2 {
+  height: 80px;
+  margin-top: 80px;
+}
+.white {
+  color: #fff;
+}
+.fs1-2em {
+  font-size: 1.2em;
+}
+
+.S4cont .S3imgBx.op100_15 img {
+  object-position: 100% 15%;
+}
+
+.S4textC_W {
+  color: #111;
+  text-shadow: 0 0 4px #111;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: #fff;
+}
+.fs4em {
+  font-size: 4em;
+}
+.namePhoto {
+  bottom: -100px;
+  position: absolute;
+  align-items: center;
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transition: 0.5s;
+}
+
+.container .box .overlay:hover ~ .namePhoto {
+  bottom: 0;
+}
+
+.logoMisiones {
+  position: relative;
+  margin-top: -12vh;
+  left: 10%;
+  width: 200px;
+
+  transform: scaleX(-1) translate(40%, 50%);
+}
