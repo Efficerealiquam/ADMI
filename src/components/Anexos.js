@@ -402,8 +402,8 @@ function Anexos() {
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
-              className="svg-inline--fa fa-chevron-double-left fa-w-16"
-              style={{ "--fa-secondary-opacity": 0.1, width: "3em" }}
+              className="svg-inline--fa fa-chevron-double-left fa-w-16 customSvgModal"
+              style={{ "--fa-secondary-opacity": 0.1 }}
             >
               <g className="fa-group">
                 <path
@@ -434,8 +434,8 @@ function Anexos() {
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
-              className="svg-inline--fa fa-chevron-double-right fa-w-16"
-              style={{ "--fa-secondary-opacity": 0.1, width: "3em" }}
+              className="svg-inline--fa fa-chevron-double-right fa-w-16 customSvgModal"
+              style={{ "--fa-secondary-opacity": 0.1 }}
             >
               <g className="fa-group">
                 <path

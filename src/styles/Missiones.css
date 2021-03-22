@@ -446,7 +446,7 @@ div.container .box .overlay:hover ~ img {
     width: 100%;
 }
 .mdl_cont img {
-  height: fit-content;
+  height: auto;
   object-fit: contain;
 }
   

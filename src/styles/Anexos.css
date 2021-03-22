@@ -445,17 +445,21 @@
   height: 5px;
   background-color: #ffd49f;
 }
-
+.customSvgModal{
+  width:3em;
+}
 .leftIconS5 {
   position: absolute;
   left: -25%;
-  top: 40%;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
 }
 .rigthIconS5 {
   position: absolute;
   right: -25%;
-  top: 40%;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
 }
 
@@ -486,8 +490,25 @@
   #anexos .S3Text.cs3 p {
     font-size: 1.1em;
   }
-}
 
+  .leftIconS5 {
+    left: -15%;
+  }
+  .rigthIconS5 {
+    right: -15%;
+  }
+}
+@media (max-width: 770px) {
+  .leftIconS5 {
+    left: 5%;
+  }
+  .rigthIconS5 {
+    right: 5%;
+  }
+  .customSvgModal{
+    width:2em;
+  }
+}
 @media (max-width: 750px) {
   #anexos .S3heading .S5h2_c {
     font-size: 4em;
@@ -563,6 +584,9 @@
   }
   #anexos .S4Cont_desc .S3Text.cs3 h2 {
     font-size: 1.8em;
+  }
+  .customSvgModal{
+    width:1.5em;
   }
 }
 
