@@ -4,8 +4,8 @@ header {
   left: 0;
   background: #333;
   width: 100%;
-  padding: 25px 100px;
-  z-index: 9999;
+  padding: 20px 100px;
+  z-index: 1000;
   display: flex !important;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +47,7 @@ header .Mul .Mli a {
   padding: 5px 10px;
   color: #ffd49f;
   overflow: hidden;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   font-family: "Lobster", cursive;
   transition: 0.5s;
@@ -69,8 +69,7 @@ header .Mul .Mli a:hover:after {
   width: 50%;
   height: 50%;
 }
-header .Mul .Mli a:hover{
-
+header .Mul .Mli a:hover {
   color: #fff;
   text-shadow: 0 0 10px #fff;
 }
@@ -85,5 +84,57 @@ header .Mul .Mli a::after {
   border-right: 2px solid #fff;
   transition: 0.5s;
 }
+.Mtoggle {
+  display: none;
+}
 
+@media (max-width: 1200px) {
+  .Mtoggle {
+    display: block;
+  }
 
+  header {
+    padding: 25px 50px;
+  }
+  header.sticky {
+    padding: 25px 60px;
+    z-index: 1000;
+  }
+  .Mul.ulMenu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #555;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    top: 80px;
+  }
+
+  .Mul.ulMenu.activeMenu {
+    left: 0;
+  }
+  .Mtoggle {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  header .Mul .Mli a {
+    margin: 10px;
+    font-size: 1.7em;
+    padding: 8px 10px;
+  }
+}
+@media (max-width: 450px) {
+  header {
+    padding: 25px 20px;
+  }
+  header.sticky {
+    padding: 25px 40px;
+  }
+}

@@ -3,14 +3,13 @@
 }
 .S5h2_c {
   position: relative;
-  color: #111 ;
+  color: #111;
   text-shadow: 0 0 4px #111;
   margin-left: 20px;
   margin-right: 20px;
   background: #fff;
 }
-.S5h2_c::before{
-
+.S5h2_c::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -54,19 +53,18 @@
 .ui.cS p {
   width: fit-content;
   height: 1.2em;
-  
+
   left: 50%;
   transform: translate(-50%);
   position: relative;
   transition: 1s;
 }
-.ui.cS p a{
-  color:#fff;
+.ui.cS p a {
+  color: #fff;
   transition: 1s;
 }
-.ui.cS:hover p a{
-  color:#222;
-
+.ui.cS:hover p a {
+  color: #222;
 }
 .ui.cS p:before {
   content: "";
@@ -179,6 +177,8 @@
   margin: 0 20px;
   display: block;
   margin-bottom: 20px;
+
+  column-count: 3;
 }
 .s5gallery-link {
   background-color: transparent;
@@ -281,9 +281,15 @@
   opacity: 1;
 }
 
-@media (min-width: 1260px) {
+@media (max-width: 1000px) {
   .s5gallery {
-    column-count: 3;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 750px) {
+  .s5gallery {
+    column-count: 1;
   }
 }
 
@@ -426,10 +432,10 @@
   margin: 0 auto;
 }
 
-.S4Cont_desc  h2.fs_text{
+.S4Cont_desc h2.fs_text {
   font-size: 4em;
 }
-.S4Cont_desc  h2.fs_text::before{
+.S4Cont_desc h2.fs_text::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -453,7 +459,7 @@
   cursor: pointer;
 }
 
-.line_separate{
+.line_separate {
   position: absolute;
   width: 150px;
   height: 2px;
@@ -462,6 +468,109 @@
   transform: translate(-50%);
   margin-top: 50px;
 }
-.pd_left30{
-  padding-left:30px;
+.pd_left30 {
+  padding-left: 30px;
+}
+
+@media (max-width: 1000px) {
+  #anexos .S4Cont_desc .S4cont :is(.S3imgBx.s3w40, .s3w60.cs3_1) {
+    width: 50%;
+  }
+  #anexos .ui.grid.cG {
+    transform: translate(-48%);
+  }
+  #anexos .fs1-2em {
+    font-size: 1em;
+  }
+
+  #anexos .S3Text.cs3 p {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 750px) {
+  #anexos .S3heading .S5h2_c {
+    font-size: 4em;
+  }
+
+  #anexos .S4Cont_desc h2.fs_text {
+    font-size: 3.1em;
+  }
+
+  .Anexos .S3heading p {
+    font-size: 1em;
+  }
+
+  #anexos .fs1-2em {
+    font-size: 0.95em;
+  }
+  #anexos .S3Text.cs3 p {
+    font-size: 1em;
+  }
+  #anexos .ui.grid.cG {
+    transform: translate(-47%);
+  }
+}
+
+#anexos .S4Cont_desc .S4cont.MOVIL {
+  display: none;
+}
+
+@media (max-width: 620px) {
+  #anexos .S4Cont_desc .S4cont.PC {
+    display: none;
+  }
+  #anexos .S4Cont_desc .S4cont.MOVIL {
+    display: block;
+  }
+  #anexos .S4Cont_desc .S4cont :is(.S3imgBx.s3w40, .s3w60.cs3_1) {
+    width: 100%;
+  }
+  #anexos .S4Cont_desc .S4cont {
+    flex-wrap: wrap;
+    max-height: max-content;
+  }
+
+  #anexos .S4Cont_desc .S4cont .S3imgBx.s3w40 {
+    margin-top: 50px;
+  }
+
+  #anexos .S3Text.cs3 h2 {
+    width: fit-content;
+  }
+  #anexos .s3w90 {
+    width: 100%;
+  }
+
+  #anexos .S3Text.cs3 p {
+    padding-left: 0;
+  }
+  #anexos .S3Text.cs3 h2::before {
+    width: 100%;
+  }
+  #anexos .ui.grid.cG {
+    transform: translate(-45%);
+  }
+}
+
+@media (max-width: 520px) {
+  #anexos .S3heading .S5h2_c {
+    font-size: 3em;
+  }
+
+  #anexos .S4Cont_desc h2.fs_text {
+    font-size: 2.5em;
+  }
+  #anexos .S4Cont_desc .S3Text.cs3 h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 340px) {
+  #anexos .S3heading .S5h2_c {
+    font-size: 2.5em;
+  }
+  #anexos .ui.cS p {
+    font-size: 0.9em;
+  }
 }

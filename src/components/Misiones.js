@@ -37,12 +37,6 @@ function Misiones() {
         <h2 className="tac fs4em bbtm_1sw ch2">Misionero</h2>
 
         <div className="S4cont mt_40">
-          <div className="S3imgBx s3w40 op100_15">
-            <img
-              src="https://res.cloudinary.com/dksedihrp/image/upload/v1613078828/Cloud_ADRP/juanCarlos_bcwfvo.jpg"
-              alt="Misionero Juan carlos"
-            />
-          </div>
           <div className="s3w60 s3center cs3_1">
             <div className="S3Text s3w90 cs3">
               <h2>Pastor Juan Carlos</h2>
@@ -74,6 +68,12 @@ function Misiones() {
               />
             </div>
           </div>
+          <div className="S3imgBx s3w40 op100_15">
+            <img
+              src="https://res.cloudinary.com/dksedihrp/image/upload/v1613078828/Cloud_ADRP/juanCarlos_bcwfvo.jpg"
+              alt="Misionero Juan carlos"
+            />
+          </div>
         </div>
         <div className="s3Dbtm bbtm_1sw"></div>
       </div>
@@ -83,13 +83,13 @@ function Misiones() {
           className="box box1"
           onClick={() =>
             modalScreenPhoto(
-              "https://ankitpodder2000.github.io/photogallery/370378.jpg"
+              "https://res.cloudinary.com/dksedihrp/image/upload/v1616427101/Cloud_ADRP/Anexos%20Selva/4_juzwur.jpg"
             )
           }
         >
           <div className="overlay"></div>
           <img
-            src="https://ankitpodder2000.github.io/photogallery/370378.jpg"
+            src="https://res.cloudinary.com/dksedihrp/image/upload/v1616427101/Cloud_ADRP/Anexos%20Selva/4_juzwur.jpg"
             alt="box1"
           />
           <div className="namePhoto">
@@ -100,13 +100,13 @@ function Misiones() {
           className="box box2"
           onClick={() =>
             modalScreenPhoto(
-              "https://ankitpodder2000.github.io/photogallery/426579e96e9333ed9518c2fd9d3e5482.jpg"
+              "https://res.cloudinary.com/dksedihrp/image/upload/v1616427101/Cloud_ADRP/Anexos%20Selva/6_eojlik.jpg"
             )
           }
         >
           <div className="overlay"></div>
           <img
-            src="https://ankitpodder2000.github.io/photogallery/426579e96e9333ed9518c2fd9d3e5482.jpg"
+            src="https://res.cloudinary.com/dksedihrp/image/upload/v1616427101/Cloud_ADRP/Anexos%20Selva/6_eojlik.jpg"
             alt="box2"
           />
           <div className="namePhoto">
@@ -117,13 +117,13 @@ function Misiones() {
           className="box box3"
           onClick={() =>
             modalScreenPhoto(
-              "https://ankitpodder2000.github.io/photogallery/free-retina-macbook-pro-wallpapers-download-hd-wallpaper-in-2019.jpg"
+              "https://res.cloudinary.com/dksedihrp/image/upload/v1616427101/Cloud_ADRP/Anexos%20Selva/9_vm5zyi.jpg"
             )
           }
         >
           <div className="overlay"></div>
           <img
-            src="https://ankitpodder2000.github.io/photogallery/free-retina-macbook-pro-wallpapers-download-hd-wallpaper-in-2019.jpg"
+            src="https://res.cloudinary.com/dksedihrp/image/upload/v1616427101/Cloud_ADRP/Anexos%20Selva/9_vm5zyi.jpg"
             alt="box3"
           />
           <div className="namePhoto">
@@ -134,13 +134,13 @@ function Misiones() {
           className="box box4"
           onClick={() =>
             modalScreenPhoto(
-              "https://ankitpodder2000.github.io/photogallery/image-79055--144149.jpg"
+              "https://res.cloudinary.com/dksedihrp/image/upload/v1616427101/Cloud_ADRP/Anexos%20Selva/5_nnc1oj.jpg"
             )
           }
         >
           <div className="overlay"></div>
           <img
-            src="https://ankitpodder2000.github.io/photogallery/image-79055--144149.jpg"
+            src="https://res.cloudinary.com/dksedihrp/image/upload/v1616427101/Cloud_ADRP/Anexos%20Selva/5_nnc1oj.jpg"
             alt="box4"
           />
           <div className="namePhoto">
@@ -151,13 +151,13 @@ function Misiones() {
           className="box box5"
           onClick={() =>
             modalScreenPhoto(
-              "https://ankitpodder2000.github.io/photogallery/img_snow_wide.jpg"
+              "https://res.cloudinary.com/dksedihrp/image/upload/v1616427101/Cloud_ADRP/Anexos%20Selva/3_tvkscv.jpg"
             )
           }
         >
           <div className="overlay"></div>
           <img
-            src="https://ankitpodder2000.github.io/photogallery/img_snow_wide.jpg"
+            src="https://res.cloudinary.com/dksedihrp/image/upload/v1616427101/Cloud_ADRP/Anexos%20Selva/3_tvkscv.jpg"
             alt="box5"
           />
           <div className="namePhoto">
@@ -168,13 +168,13 @@ function Misiones() {
           className="box box6"
           onClick={() =>
             modalScreenPhoto(
-              "https://ankitpodder2000.github.io/photogallery/ivy_plant_sun_164663_3840x2160.jpg"
+              "https://res.cloudinary.com/dksedihrp/image/upload/v1616427101/Cloud_ADRP/Anexos%20Selva/7_kvspbs.jpg"
             )
           }
         >
           <div className="overlay"></div>
           <img
-            src="https://ankitpodder2000.github.io/photogallery/ivy_plant_sun_164663_3840x2160.jpg"
+            src="https://res.cloudinary.com/dksedihrp/image/upload/v1616427101/Cloud_ADRP/Anexos%20Selva/7_kvspbs.jpg"
             alt="box6"
           />
           <div className="namePhoto">
@@ -185,13 +185,13 @@ function Misiones() {
           className="box box7"
           onClick={() =>
             modalScreenPhoto(
-              "https://ankitpodder2000.github.io/photogallery/machine_rear_view_white_164687_3840x2160.jpg"
+              "https://res.cloudinary.com/dksedihrp/image/upload/v1616427101/Cloud_ADRP/Anexos%20Selva/8_wpsook.jpg"
             )
           }
         >
           <div className="overlay"></div>
           <img
-            src="https://ankitpodder2000.github.io/photogallery/machine_rear_view_white_164687_3840x2160.jpg"
+            src="https://res.cloudinary.com/dksedihrp/image/upload/v1616427101/Cloud_ADRP/Anexos%20Selva/8_wpsook.jpg"
             alt="box7"
           />
           <div className="namePhoto">

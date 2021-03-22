@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles/Mission.css";
 
-function Mission() {
+function Mission({ useTranslation }) {
+  const [t] = useTranslation("home");
   const toggleS2 = (id) => {
     const imgBx = document.getElementById(id);
     imgBx.classList.toggle("active");
@@ -10,18 +11,17 @@ function Mission() {
   return (
     <section className="S2Mission sinZing" id="nuestra_mision">
       <div className="S1heading white">
-        <h2 className="cH2Before">Nuestra Misión</h2>
+        <h2 className="cH2Before"> {t("titles_nuestra_mision.title_1")}</h2>
         <h3 className="cus_h3_about S2H3">
-          Cual es nuestra misión en esta tierra?
+          {t("titles_nuestra_mision.subtitle_1")}
         </h3>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
-          eligendi a voluptatum. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Voluptate reiciendis explicabo quisquam dolore
-          adipisci dolores laboriosam unde nesciunt, nihil natus.
+          {t("nuestra_mission.mission_en_la_tierra_1")}
+          <br />
+          {t("nuestra_mission.mission_en_la_tierra_2")}
         </p>
       </div>
-      <div className="S2container">
+      <div className="S2container s2Personalizate">
         <div className="S2Box" onClick={() => toggleS2("n1")}>
           <div id="n1" className="S2imgBx">
             <img

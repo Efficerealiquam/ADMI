@@ -3,7 +3,14 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { home_es, home_po } from "./imports/translations_imp";
+import {
+  home_es,
+  home_po,
+  home_en,
+  menu_es,
+  menu_po,
+  menu_en,
+} from "./imports/translations_imp";
 import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
 
@@ -13,9 +20,15 @@ i18next.init({
   resources: {
     es: {
       home: home_es,
+      menu: menu_es,
     },
     po: {
       home: home_po,
+      menu: menu_po,
+    },
+    en: {
+      home: home_en,
+      menu: menu_en,
     },
   },
 });

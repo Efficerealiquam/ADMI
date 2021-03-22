@@ -3,11 +3,18 @@
   min-height: 100vh;
   margin-top: 10vh;
 }
+
 .S1heading {
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
   color: #162c3b;
+}
+
+.contImgBx {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
 }
 .S1heading h2 {
   /*     -webkit-text-stroke: 1px #00bcd4; */
@@ -30,9 +37,11 @@
   position: relative;
   margin-top: 70px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .S1contentBx {
+  width: 100%;
   padding-right: 30px;
   position: relative;
 }
@@ -49,7 +58,7 @@
   position: absolute;
   bottom: -5px;
   left: 0;
-  
+
   width: 25%;
   height: 3px;
   background: rgba(0, 0, 0, 0.7);
@@ -59,7 +68,8 @@
   min-width: 50%;
 }
 .S1content img {
-  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .cus_h3_about {
@@ -75,7 +85,91 @@
   position: absolute;
   bottom: -5px;
   left: 0;
-  width: 25%;
+  width: 40%;
   height: 3px;
   background: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 1200px) {
+  .S1content {
+    margin-top: 30px;
+  }
+
+  .S1img {
+    margin-top: 50px;
+  }
+  .S1contentBx.w50 p {
+    font-size: 0.9em;
+  }
+  .S1content div p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .S1content img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: 60% 0;
+  }
+  .S1img {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 750px) {
+  .S1about .S1heading h2 {
+    font-size: 3em;
+  }
+  .S1content {
+    display: block;
+  }
+  .S1img {
+    margin-top: 50px;
+  }
+  .S1about .S1content .S1contentBx {
+    padding-right: 0px;
+  }
+  .S1about .S1content .S1contentBx p {
+    padding-right: 0px;
+    font-size: 0.8em;
+  }
+  .S1content div p {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 460px) {
+  .S1about .S1heading h2 {
+    font-size: 2.2em;
+  }
+
+  .S1heading h2::before {
+    width: 40%;
+  }
+  .S1contentBx h3 {
+    font-size: 1.5em;
+  }
+  .S1contentBx h3::before {
+    width: 30%;
+  }
+
+  .cus_h3_about {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 370px) {
+  .S1about .S1heading h2 {
+    font-size: 2.3em;
+  }
+  .S1contentBx h3 {
+    font-size: 1.1em;
+  }
+  .cus_h3_about {
+    font-size: 1.1em;
+  }
+  .S1about {
+    margin: 30px 30px;
+  }
 }

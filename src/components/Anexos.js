@@ -111,7 +111,7 @@ function Anexos() {
       </div>
       <div className="S4Cont_desc">
         <h2 className="tac fs_text" id="anexo1">
-          Anexo de Carabaillo
+          Micaela 3
         </h2>
         <p className="fs1-2em ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
@@ -160,7 +160,7 @@ function Anexos() {
         </div>
         {/* Anexo 2 */}
         <div className="line_separate" id="anexo2"></div>
-        <h2 className="tac mt_100 fs_text">Anexo de Carabaillo</h2>
+        <h2 className="tac mt_100 fs_text">Carabaillo</h2>
         <p className="fs1-2em ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
           quidem modi asperiores optio tempore ad dolor nemo consequatur
@@ -172,7 +172,7 @@ function Anexos() {
           dolorum vel. Vero perferendis labore itaque voluptas dolore quis.
         </p>
 
-        <div className="S4cont mt_40">
+        <div className="S4cont mt_40 PC">
           <div className="S3imgBx s3w40">
             <img
               src="https://react.semantic-ui.com/images/wireframe/image.png"
@@ -206,9 +206,43 @@ function Anexos() {
             </div>
           </div>
         </div>
+        <div className="S4cont mt_40 MOVIL">
+          <div className="s3w60  cs3_1">
+            <div className="S3Text s3w90 cs3">
+              <h2>Lider Domenica </h2>
+              <p className=" fs1-2em pd_left30">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloremque neque porro, mollitia ad cupiditate placeat esse
+                dolorem odit exercitationem voluptate, repellendus, a quo
+                libero? Expedita sit ab omnis accusantium, quo, distinctio,
+                cumque odit nisi voluptas impedit eaque. Aliquam vero cum ipsum
+                nobis distinctio reprehenderit dignissimos laboriosam id. Error,
+                reiciendis delectus. <br /> <br />
+                Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Voluptate quidem modi asperiores optio tempore
+                ad dolor nemo consequatur corporis aspernatur! Quasi id
+                accusantium dolorum vel. Vero perferendis labore itaque voluptas
+                dolore quis. <br /> <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                culpa excepturi delectus explicabo reiciendis a fuga ex maxime
+                fugiat! Provident ratione fuga molestiae quibusdam fugiat
+                reiciendis ipsa dolores id! Dicta libero vitae sunt quae id modi
+                laborum, repudiandae laudantium quos expedita quaerat nisi a
+                voluptate doloremque! Numquam ipsam neque autem? Sed aperiam
+                dolorem porro culpa harum, maxime nam. Odio, iusto.
+              </p>
+            </div>
+          </div>
+          <div className="S3imgBx s3w40">
+            <img
+              src="https://react.semantic-ui.com/images/wireframe/image.png"
+              alt="Lider de carabaillo"
+            />
+          </div>
+        </div>
         {/* Anexo 3 */}
         <div className="line_separate" id="anexo3"></div>
-        <h2 className="tac mt_100 fs_text">Anexo de Carabaillo</h2>
+        <h2 className="tac mt_100 fs_text">Luz divina</h2>
         <p className="fs1-2em ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
           quidem modi asperiores optio tempore ad dolor nemo consequatur
@@ -256,7 +290,7 @@ function Anexos() {
         </div>
         {/* Anexo 4 */}
         <div className="line_separate" id="anexo4"></div>
-        <h2 className="tac mt_100 fs_text ">Anexo de Carabaillo</h2>
+        <h2 className="tac mt_100 fs_text ">Las brisas</h2>
         <p className="fs1-2em ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
           quidem modi asperiores optio tempore ad dolor nemo consequatur
@@ -268,7 +302,7 @@ function Anexos() {
           dolorum vel. Vero perferendis labore itaque voluptas dolore quis.
         </p>
 
-        <div className="S4cont mt_40">
+        <div className="S4cont mt_40 PC">
           <div className="S3imgBx s3w40">
             <img
               src="https://react.semantic-ui.com/images/wireframe/image.png"
@@ -300,6 +334,40 @@ function Anexos() {
                 dolorem porro culpa harum, maxime nam. Odio, iusto.
               </p>
             </div>
+          </div>
+        </div>
+        <div className="S4cont mt_40 MOVIL">
+          <div className="s3w60  cs3_1">
+            <div className="S3Text s3w90 cs3">
+              <h2>Lider Domenica </h2>
+              <p className=" fs1-2em pd_left30">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloremque neque porro, mollitia ad cupiditate placeat esse
+                dolorem odit exercitationem voluptate, repellendus, a quo
+                libero? Expedita sit ab omnis accusantium, quo, distinctio,
+                cumque odit nisi voluptas impedit eaque. Aliquam vero cum ipsum
+                nobis distinctio reprehenderit dignissimos laboriosam id. Error,
+                reiciendis delectus. <br /> <br />
+                Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Voluptate quidem modi asperiores optio tempore
+                ad dolor nemo consequatur corporis aspernatur! Quasi id
+                accusantium dolorum vel. Vero perferendis labore itaque voluptas
+                dolore quis. <br /> <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                culpa excepturi delectus explicabo reiciendis a fuga ex maxime
+                fugiat! Provident ratione fuga molestiae quibusdam fugiat
+                reiciendis ipsa dolores id! Dicta libero vitae sunt quae id modi
+                laborum, repudiandae laudantium quos expedita quaerat nisi a
+                voluptate doloremque! Numquam ipsam neque autem? Sed aperiam
+                dolorem porro culpa harum, maxime nam. Odio, iusto.
+              </p>
+            </div>
+          </div>
+          <div className="S3imgBx s3w40">
+            <img
+              src="https://react.semantic-ui.com/images/wireframe/image.png"
+              alt="Lider de carabaillo"
+            />
           </div>
         </div>
       </div>

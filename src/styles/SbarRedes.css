@@ -3,12 +3,14 @@
   z-index: 999;
   right: 0;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(100%, -50%);
   transition: all 0.5s ease-out;
   opacity: 1;
   background: rgba(255, 255, 255, 0.9);
   font-family: "Helvetica Neue", sans-serif;
+ 
 }
+
 .social > p {
   font-size: 18px;
   color: #121212;
@@ -30,11 +32,14 @@
   border-top-left-radius: 4px;
 }
 .social--fold {
-  transform: translate(100%, -50%);
+  transform: translate(0%, -50%);
 }
 
-.social--fold .social__btn::before {
+.social .social__btn::before {
   transform: rotate(-180deg);
+}
+.social--fold .social__btn::before {
+  transform: rotate(0deg);
 }
 .social__list {
   position: relative;
@@ -64,6 +69,24 @@
     color: #ffd49f;
     cursor: pointer;
 }
+
+.social__item > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 44px;
+  color: #333;
+  padding: 0 21px;
+  text-decoration: none;
+}
+
+.social__item > span:hover {
+    background: #333;
+    color: #ffd49f;
+    cursor: pointer;
+}
+
 
 .social__btn::before {
   content: "";

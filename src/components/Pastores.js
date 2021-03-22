@@ -92,8 +92,54 @@ function Pastores() {
           </div>
         </div>
         <ul className="s3controls">
-          <li onClick={() => prevSlideS3()}></li>
-          <li onClick={() => nextSlideS3()}></li>
+          <li onClick={() => prevSlideS3()}>
+            <span
+              data-balloon="Copy Unicode Glyph"
+              data-balloon-pos="down"
+              className="dib hover-pink4"
+            >
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fal"
+                data-icon="chevron-left"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 512"
+                className="svg-inline--fa fa-chevron-left fa-w-8"
+              >
+                <path
+                  fill="currentColor"
+                  d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                  className=""
+                ></path>
+              </svg>
+            </span>
+          </li>
+          <li onClick={() => nextSlideS3()}>
+            <span
+              data-balloon="Copy Unicode Glyph"
+              data-balloon-pos="down"
+              className="dib hover-grape4"
+            >
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fal"
+                data-icon="chevron-right"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 512"
+                className="svg-inline--fa fa-chevron-right fa-w-8"
+              >
+                <path
+                  fill="currentColor"
+                  d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                  className=""
+                ></path>
+              </svg>
+            </span>
+          </li>
         </ul>
       </div>
     </section>

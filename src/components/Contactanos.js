@@ -72,9 +72,7 @@ function Contactanos() {
                 <span>
                   <i className="fas fa-envelope"></i>
                 </span>
-                <span>
-                  <p>iglesiaadmi@gmail.com</p>
-                </span>
+                <span>iglesiaadmi@gmail.com</span>
               </li>
             </ul>
           </div>

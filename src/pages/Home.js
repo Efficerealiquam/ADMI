@@ -8,14 +8,14 @@ import Mission from "../components/Mission";
 import Pastores from "../components/Pastores";
 import SideBarRedes from "../components/SideBarRedes";
 import "../styles/home.css";
-
+import { useTranslation } from "react-i18next";
 function Home() {
   return (
     <div className="cont_home">
-      <Banner />
+      <Banner useTranslation={useTranslation} />
       <SideBarRedes />
       <About />
-      <Mission />
+      <Mission useTranslation={useTranslation} />
       <Pastores />
       <Misiones />
       <Anexos />

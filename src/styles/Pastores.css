@@ -1,5 +1,5 @@
-.pastores{
-    min-height:120vh;
+.pastores {
+  min-height: 120vh;
 }
 .S3heading {
   width: 100%;
@@ -7,9 +7,8 @@
   margin-bottom: 30px;
   padding-top: 70px;
 }
-.S3heading p{
-
-  padding:0 4vh;
+.S3heading p {
+  padding: 0 4vh;
   text-align: initial;
 }
 .S3heading h2 {
@@ -36,20 +35,20 @@
   width: 60%;
 }
 .s3w50 {
-    width: 50%;
-  }
-  .s3center{
-    justify-items: center;
-    align-items: center;
-    display: grid;
-  }
+  width: 50%;
+}
+.s3center {
+  justify-items: center;
+  align-items: center;
+  display: grid;
+}
 .s3cont {
   position: absolute;
   display: flex;
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
 .s3cont.s3active {
   opacity: 1;
@@ -62,51 +61,119 @@
   object-position: center center;
 }
 .b000 {
-
   border: 1px solid #222;
 }
-.s3controls{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right:-81px;
-    width: 80px;
-    z-index: 10;
+.s3controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -81px;
+  width: 80px;
+  z-index: 10;
 }
-.s3controls li{
-    position: relative;
-    width: 80px;
-    height: 80px;
-    background: #222;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.s3controls li {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: #222;
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+}
+.s3controls li:hover {
+  background: #fff;
+  border: 1px solid #222;
 }
 
-.s3controls li::before{
-    content:"";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-left: 3px solid #fff;
-    border-bottom: 3px solid #fff;
-    transform: rotate(45deg);
+.s3controls li span svg {
+  width: 20px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
 }
-.s3controls li:hover::before{
-    border-left: 3px solid #222;
-    border-bottom: 3px solid #222;
+.S3Text {
+  text-align: center;
+  color: #555;
 }
-.s3controls li:hover{
-    background: #fff;
-    border: 1px solid #222;
+.s3controls li:hover span svg {
+  color: #222;
 }
-.s3controls li:nth-child(2):before{
-    transform: rotate(225deg);
-    
+
+svg.fa-chevron-left {
+  transform: translate(-60%, -50%);
 }
-.S3Text{
-    text-align: center;
-    color: #555;
+
+svg.fa-chevron-right {
+  transform: translate(-40%, -50%);
+}
+
+@media (max-width: 1200px) {
+  .s3controls {
+    right: -41px;
+    width: 40px;
+  }
+  .s3controls li {
+    width: 40px;
+    height: 40px;
+  }
+  .s3controls li span svg {
+    width: 10px;
+  }
+}
+
+@media (max-width: 950px) {
+  .pastores .S2container .s3cont .s3w50 .S3Text.s3w60 {
+    width: 80%;
+  }
+  .pastores .S2container {
+    width: calc(100% - 100px);
+  }
+}
+
+@media (max-width: 750px) {
+  .pastores .S2container .s3cont .s3w50 .S3Text.s3w60 p {
+    font-size: 0.9em;
+  }
+
+  .pastores .S3heading h2.colorH2 {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  .pastores .S2container .s3cont .s3w50 .S3Text.s3w60 p {
+    font-size: 0.8em;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .S5h2_c::before {
+    width: 25%;
+  }
+  .pastores .S3heading h2.colorH2 {
+    font-size: 3em;
+  }
+  /*   .pastores .S2container {
+    width: calc(100% - 100px);
+  } */
+  .pastores .S2container .s3cont .S3imgBx {
+    display: none;
+  }
+  .pastores .S2container .s3cont .s3w50 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .pastores .S2container {
+    width: calc(100% - 100px);
+  }
+  .pastores .S3heading h2.colorH2 {
+    font-size: 2.5em;
+  }
+  .S5h2_c::before {
+    width: 35%;
+  }
 }

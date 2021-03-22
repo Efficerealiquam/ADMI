@@ -60,15 +60,14 @@ footer {
   margin-right: 10px;
   text-decoration: none;
   border-radius: 4px;
-  transition:.5s;
+  transition: 0.5s;
 }
 .fooSCI li a:hover {
   background: #fff;
-
 }
-.fooSCI li a:hover .fab{
+.fooSCI li a:hover .fab {
   color: #333;
-  text-shadow:0 0 7px #333;
+  text-shadow: 0 0 7px #333;
 }
 .fooSCI li a .fab {
   color: #fff;
@@ -93,10 +92,8 @@ footer {
   position: relative;
   color: #fff;
   font-weight: 700;
-    font-size:20px;
+  font-size: 20px;
 }
-
-
 
 .contact {
   width: calc(25% - 60px);
@@ -144,5 +141,58 @@ footer {
 
   .copyrightText {
     padding: 8px 40px;
+  }
+}
+@media (max-width: 850px) {
+  .fooContainer .sec.aboutus {
+    width: 100%;
+  }
+  .contact {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .logoFoo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+  .fooImgBx {
+    position: relative;
+    width: 250px;
+    height: 250px;
+  }
+  .fooContainer h2 {
+    font-size: 3em;
+  }
+  .logoFoo h3 {
+    font-size: 2.4em;
+  }
+}
+
+@media (max-width: 750px) {
+  .fooContainer .sec {
+    margin-right: 0px;
+  }
+  .contact .infoFoo {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+  }
+  footer {
+    padding: 50px 50px;
+  }
+}
+
+@media (max-width: 470px) {
+  footer {
+    padding: 50px 20px;
+  }
+  .logoFoo h3 {
+    font-size: 1.5em;
+  }
+
+  .contact .infoFoo {
+    flex-wrap: wrap;
   }
 }
