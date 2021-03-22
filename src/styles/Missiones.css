@@ -445,6 +445,10 @@ div.container .box .overlay:hover ~ img {
  #missiones .S3Text.s3w90 {
     width: 100%;
 }
+.mdl_cont img {
+  height: fit-content;
+  object-fit: contain;
+}
   
 }
 
